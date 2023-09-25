@@ -958,6 +958,27 @@ video {
   -webkit-animation: spin 10s linear infinite !important;
           animation: spin 10s linear infinite !important;
 }
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-fade {
+  animation: fade 1s linear infinite;
+}
+
+.animate-fade-long {
+  animation: fade 5s linear infinite;
+}
+
 @keyframes spin{
   to{
     -webkit-transform: rotate(360deg);
