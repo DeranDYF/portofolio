@@ -34,7 +34,7 @@
                 </div>
                 <div class="justify-content-center">
                     <div class="text-center">
-                        <h4 class="mb-0 mt-3 text-sm animate-fade-long">"To be here, to be with you this is something big for me. This is Amazing."</h4>
+                        <h4 class="mb-0 mt-3 text-sm mx-4 animate-fade-long">"To be here, to be with you this is something big for me. This is Amazing."</h4>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
         <!-- Navbar Start -->
         <nav class="navbar" id="navbar">
             <div class="container flex flex-wrap items-center justify-between">
-                <a class="navbar-brand md:me-8" href="index.html">
+                <a class="navbar-brand md:me-8" href="">
                     <span class="inline-block dark:hidden">
                         <img src="assets/dyfzn/logo-dark.png" class="l-dark" alt="">
                         <img src="assets/dyfzn/logo-light.png" class="l-light" alt="">
@@ -65,9 +65,16 @@
                 <!-- Navbar Manu -->
                 <div class="navigation lg_992:order-1 lg_992:flex hidden ms-auto" id="menu-collapse">
                     <ul class="navbar-nav nav-light sidebar-nav" id="navbar-navlist">
+                        <div class="dark:hidden">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home</a>
+                            <a class="nav-link active" href="#home-dark">Home</a>
                         </li>
+                        </div>
+                        <div class="hidden dark:show">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home-light">Home</a>
+                            </li>
+                        </div>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About Me</a>
                         </li>
@@ -87,7 +94,25 @@
         <!-- Navbar End -->
 
         <!-- Start Hero -->
-        <section class="relative table w-full lg:py-60 py-36 bg-[url('../../assets/dyfzn/bg.jpg')] bg-no-repeat bg-center bg-cover" id="home">
+        <div class="dark:hidden">
+            <section class="relative table w-full lg:py-60 py-36 bg-[url('../../assets/dyfzn/bg.jpg')] bg-no-repeat bg-center bg-cover l-dark" id="home-dark">
+                <div class="absolute inset-0 bg-slate-900/40"></div>
+                <div class="container">
+                    <div class="grid grid-cols-1 text-center mt-5 relative">
+                        <img src="assets/dyfzn/hero.png" class="rounded-full h-28 w-28 mx-auto wow animate__animated animate__fadeInUp" data-wow-delay=".1s" alt="">
+                        <h4 class="font-bold lg:text-[40px] text-3xl lg:leading-normal leading-normal text-white my-4 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">Deran Deriyana Fauzzan</h4>
+                        <p class="text-white/50 max-w-xl mx-auto wow animate__animated animate__fadeInUp" data-wow-delay=".5s">Web Developer | Bandung, Indonesia</p>
+
+                        <div class="mt-6 wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
+                            <a href="#about" class="btn rounded-md bg-amber-500/21 hover:bg-amber-521 border-amber-500/21 hover:border-amber-621 text-white" type="submit">About me</a>
+                        </div>
+                    </div>
+                </div><!--end container-->
+            </section><!--end section-->
+        </div>
+        <!-- End Hero -->
+        <div class="hidden dark:show">
+        <section class="relative table w-full lg:py-60 py-36 bg-[url('../../assets/dyfzn/bg2.jpg')] bg-no-repeat bg-center bg-cover l-light" id="home-light">
             <div class="absolute inset-0 bg-slate-900/40"></div>
             <div class="container">
                 <div class="grid grid-cols-1 text-center mt-5 relative">
@@ -101,7 +126,8 @@
                 </div>
             </div><!--end container-->
         </section><!--end section-->
-        <!-- End Hero -->
+        </div>
+
 
         <!-- Start -->
         <section class="relative md:py-24 py-16 overflow-hidden" id="about">

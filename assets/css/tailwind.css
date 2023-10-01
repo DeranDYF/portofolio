@@ -834,6 +834,11 @@ video {
 .hidden{
   display: none !important;
 }
+
+.show {
+  display: block !important;
+}
+
 .h-10{
   height: 2.5rem !important;
 }
@@ -1150,6 +1155,11 @@ video {
 .bg-\[url\(\'\.\.\/\.\.\/assets\/dyfzn\/bg1\.jpg\'\)\]{
   background-image: url('../../assets/dyfzn/bg1.jpg') !important;
 }
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/dyfzn\/bg2\.jpg\'\)\]{
+  background-image: url('../../assets/dyfzn/bg2.jpg') !important;
+}
+
 .bg-gradient-to-b{
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--tw-gradient-stops))) !important;
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops)) !important;
@@ -1604,6 +1614,7 @@ p{
 .navbar .navbar-brand .logo-dark-mode{
   display: none;
 }
+
 .navbar .navbar-brand .l-light,
 .navbar .navbar-brand .logo-light-mode{
   display: inline-block;
@@ -2589,6 +2600,10 @@ html[dir=rtl] .tns-visually-hidden {
 
 :is(.dark .dark\:hidden){
   display: none !important;
+}
+
+:is(.dark .dark\:show){
+  display: block !important;
 }
 
 :is(.dark .dark\:border-gray-700){
